@@ -1,0 +1,60 @@
+{
+  "name": "Portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Портфолио Забродина Игоря",
+  "author": "Igor Zabrodin",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "0.1.x",
+    "browser-sync": "latest",
+    "cz-conventional-changelog": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-cheerio": "latest",
+    "gulp-concat": "latest",
+    "gulp-csscomb": "latest",
+    "gulp-csso": "latest",
+    "gulp-dest-clean": "latest",
+    "gulp-file-include": "latest",
+    "gulp-gh-pages": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-jshint": "latest",
+    "gulp-less": "latest",
+    "gulp-less-reporter": "latest",
+    "gulp-newer": "latest",
+    "gulp-notify": "latest",
+    "gulp-plumber": "latest",
+    "gulp-rename": "latest",
+    "gulp-replace": "latest",
+    "gulp-size": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-svg-sprite": "latest",
+    "gulp-svgmin": "latest",
+    "gulp-uglify": "latest",
+    "gulp-watch": "latest",
+    "gulp.spritesmith": "latest",
+    "jshint": "latest",
+    "jshint-stylish": "latest",
+    "less-plugin-group-css-media-queries": "latest",
+    "merge-stream": "latest",
+    "vinyl-buffer": "latest"
+  },
+  "scripts": {
+    "test": "editorconfig-cli"
+  },
+  "editorconfig-cli": [
+    "*.html",
+    "*.json"
+  ],
+  "engines": {
+    "node": "7.5"
+  },
+  "dependencies": {
+    "imagemin-pngquant": "latest"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
