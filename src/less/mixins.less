@@ -1,0 +1,20 @@
+.clearfix() {
+	&::after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+.container() {
+	max-width: 280px;
+	margin: 0 auto;
+
+	@media @tablet-widths {
+		max-width: 620px;
+	}
+
+	@media @desktop-widths {
+		max-width: 940px;
+	}
+}
