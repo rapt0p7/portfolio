@@ -1,0 +1,44 @@
+<section class="contact">
+	<div class="contact__container">
+		<section class="contact__phone">
+			<span class="contact__title">Позвоните мне:</span>
+			<div class="contact__number">
+				<svg class="icon  icon-phone  icon--contact">
+					<use xlink:href="img/sprite.svg#phone"></use>
+				</svg>
+				<span class="contact__text">+7 987 511 31 04</span>
+			</div>
+			<div class="contact__number">
+				<svg class="icon  icon-skype  icon--contact">
+					<use xlink:href="img/sprite.svg#skype"></use>
+				</svg>
+				<span class="contact__text">alltern89</span>
+			</div>
+		</section>
+		<form class="contact__form  form" id="contact_form" action="https://formspree.io/rapt0p7@gmail.com" method="POST">
+			<span class="contact__title">Или напишите:</span>
+			<div class="form__group">
+				<input class="form__input" id="fullName" type="text" name="name" required>
+				<div class="form__label-box">
+					<label class="form__label" for="fullName">Ваше Имя</label>
+				</div>
+				</div>
+			<div class="form__group">
+				<input class="form__input" id="emailFrom" type="text" name="_replyto" required>
+				<div class="form__label-box">
+					<label class="form__label" for="emailFrom">Email</label>
+				</div>
+			</div>
+			<div class="form__group">
+				<textarea class="form__message" id="area" name="message" required></textarea>
+				<div class="form__label-box  form__label-box--area">
+					<label class="form__label  form__label--area" for="area">Сообщение</label>
+				</div>
+			</div>
+			<input type="hidden" name="_next" value="thanks.html"/>
+			<div class="form__group">
+				<input class="btn  btn--material  btn--green" type="submit" value="Отправить">
+			</div>
+		</form>
+	</div>
+</section>
