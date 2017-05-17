@@ -1,0 +1,31 @@
+.logo {
+	color: inherit;
+	line-height: 20px;
+	display: flex;
+	align-items: center;
+
+	&__link {
+		margin-right: 10px;
+		height: 60px;
+
+		&:hover {
+			color: #fff;
+		}
+
+		&:active {
+			opacity: 0.6;
+		}
+	}
+}
+
+.logo__text {
+	display: none;
+	user-select: none;
+	width: 60px;
+}
+
+@media @desktop-widths {
+	.logo__text {
+		display: block;
+	}
+}

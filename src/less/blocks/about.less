@@ -1,0 +1,29 @@
+.about {
+
+	&__container {
+		padding-top: 50px;
+		padding-bottom: 30px;
+		.container();
+		border-bottom: 1px dashed;
+	}
+
+	&__heading {
+		color: #39ADB5;
+		font-size: 22px;
+		font-weight: bold;
+		margin-bottom: 20px;
+		display: block;
+	}
+
+	&__resume {
+		border-bottom: 1px dotted;
+		color: inherit;
+		color: @materialGreen;
+	}
+}
+
+@media @tablet-widths {
+	.about__container {
+		padding-top: 200px;
+	}
+}

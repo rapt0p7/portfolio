@@ -1,0 +1,42 @@
+.page-footer {
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	font-size: 10px;
+	background-color: @blueGrey;
+
+	&__container {
+		.container();
+		display: flex;
+		justify-content: flex-end;
+		flex-direction: column;
+	}
+
+	&__copyright {
+		flex-grow: 1;
+		text-align: left;
+	}
+
+	&__link {
+		color: @materialGreen;
+		border-bottom: 1px dotted;
+
+		&:hover {
+			opacity: 0.9;
+		}
+
+		&:active {
+			opacity: 0.6;
+		}
+	}
+}
+
+@media @tablet-widths {
+	.page-footer__container {
+		flex-direction: row;
+	}
+
+	.page-footer__copyright {
+		text-align: right;
+	}
+}
