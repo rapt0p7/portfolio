@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Забродин Игорь | Web Developer | Контакты</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<header class="page-header">
+	<div class="page-header__container">
+	<div class="logo">
+		<a class="logo__link" href="index.html">
+			<svg class="icon  icon-code  icon-code--white">
+				<use xlink:href="img/sprite.svg#code"></use>
+			</svg>
+		</a>
+		<span class="logo__text">Imaginary Code Machine</span>
+	</div>
+
+		<div class="hamburger"></div>
+		<nav class="menu">
+			<ul class="menu__list">
+				<li class="menu__item"><a class="menu__link" href="index.html">//Главная</a></li>
+				<li class="menu__item"><a class="menu__link" href="work.html">//Мои работы</a></li>
+				<li class="menu__item"><a class="menu__link" href="skills.html">//Навыки</a></li>
+				<li class="menu__item"><a class="menu__link" href="contact.html">//Контакты</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<section class="contact">
+	<div class="contact__container">
+		<section class="contact__phone">
+			<span class="contact__title">Позвоните мне:</span>
+			<div class="contact__number">
+				<svg class="icon  icon-phone  icon--contact">
+					<use xlink:href="img/sprite.svg#phone"></use>
+				</svg>
+				<span class="contact__text">+7 987 511 31 04</span>
+			</div>
+			<div class="contact__number">
+				<svg class="icon  icon-skype  icon--contact">
+					<use xlink:href="img/sprite.svg#skype"></use>
+				</svg>
+				<span class="contact__text">alltern89</span>
+			</div>
+		</section>
+		<form class="contact__form  form" id="contact_form" action="https://formspree.io/rapt0p7@gmail.com" method="POST">
+			<span class="contact__title">Или напишите:</span>
+			<div class="form__group">
+				<input class="form__input" id="fullName" type="text" name="name" required>
+				<div class="form__label-box">
+					<label class="form__label" for="fullName">Ваше Имя</label>
+				</div>
+				</div>
+			<div class="form__group">
+				<input class="form__input" id="emailFrom" type="text" name="_replyto" required>
+				<div class="form__label-box">
+					<label class="form__label" for="emailFrom">Email</label>
+				</div>
+			</div>
+			<div class="form__group">
+				<textarea class="form__message" id="area" name="message" required></textarea>
+				<div class="form__label-box  form__label-box--area">
+					<label class="form__label  form__label--area" for="area">Сообщение</label>
+				</div>
+			</div>
+			<input type="hidden" name="_next" value="thanks.html"/>
+			<div class="form__group">
+				<input class="btn  btn--material  btn--green" type="submit" value="Отправить">
+			</div>
+		</form>
+	</div>
+</section>
+
+<footer class="page-footer">
+	<div class="page-footer__container">
+		<span class="page-footer__creator">Site create by <a href="https://github.com/rapt0p7" class="page-footer__link" target="_blank">me</a></span>
+		<section class="page-footer__copyright">
+			Icons made by <a href="http://www.freepik.com" class="page-footer__link" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" class="page-footer__link" title="Flaticon">www.flaticon.com</a>	is licensed by&nbsp;<a href="http://creativecommons.org/licenses/by/3.0/" class="page-footer__link" title="Creative Commons BY 3.0" target="_blank">&nbsp;CC 3.0 BY</a>
+		</section>
+	</div>
+</footer>
+
+<script src="js/script.min.js"></script>
+</body>
+</html>
