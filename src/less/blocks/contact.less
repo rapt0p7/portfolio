@@ -1,5 +1,8 @@
 .contact {
 	flex-grow: 1;
+	box-shadow: 0 0 2px 0 #000;
+	position: relative;
+	z-index: 10;
 
 	&__container {
 		.container();
@@ -75,6 +78,11 @@
 
 		&:focus {
 			outline: none;
+		}
+
+		&:-webkit-autofill {
+			 -webkit-box-shadow: 0 0 0px 1000px @blueGrey inset;
+			-webkit-text-fill-color: @secondaryColor;
 		}
 	}
 
