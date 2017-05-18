@@ -1,12 +1,12 @@
 AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript
 <IfModule mod_headers.c>
-    # Serve gzip compressed CSS files if they exist 
+    # Serve gzip compressed CSS files if they exist
     # and the client accepts gzip.
     RewriteCond "%{HTTP:Accept-encoding}" "gzip"
     RewriteCond "%{REQUEST_FILENAME}\.gz" -s
     RewriteRule "^(.*)\.css" "$1\.css\.gz" [QSA]
 
-    # Serve gzip compressed JS files if they exist 
+    # Serve gzip compressed JS files if they exist
     # and the client accepts gzip.
     RewriteCond "%{HTTP:Accept-encoding}" "gzip"
     RewriteCond "%{REQUEST_FILENAME}\.gz" -s
@@ -21,12 +21,23 @@ AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javasc
       # Serve correct encoding type.
       Header append Content-Encoding gzip
 
-      # Force proxies to cache gzipped & 
+      # Force proxies to cache gzipped &
       # non-gzipped css/js files separately.
       Header append Vary Accept-Encoding
     </FilesMatch>
-    
+
 </IfModule>
+
+Options +MultiViews
+#example.com/page will display the contents of example.com/page.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L,QSA]
+
+#301 from example.com/page.html to example.com/page
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*\.html\ HTTP/
+RewriteRule ^(.*)\.html$ /$1 [R=301,L]
 
 ExpiresActive on
 ExpiresByType application/javascript "access plus 1 months"
