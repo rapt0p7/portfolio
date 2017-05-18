@@ -1479,6 +1479,12 @@ blockquote {
 }
 
 .contact {
+	position: relative;
+	z-index: 10;
+
+	-webkit-box-shadow: 0 0 2px 0 #000000;
+	        box-shadow: 0 0 2px 0 #000000;
+
 	-webkit-box-flex: 1;
 	flex-grow: 1;
 	-ms-flex-positive: 1;
@@ -1596,6 +1602,12 @@ blockquote {
 
 .form__input:focus {
 	outline: none;
+}
+
+.form__input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0px 1000px #37474f inset;
+
+	-webkit-text-fill-color: #fafafa;
 }
 
 .form__label-box {
