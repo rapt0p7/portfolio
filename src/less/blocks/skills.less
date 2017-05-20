@@ -1,13 +1,11 @@
 .skills {
 	flex-grow: 1;
-	box-shadow: 0 0 2px 0 #000;
-	position: relative;
-	z-index: 10;
 
 	&__container {
 		.container();
 		padding-top: 50px;
 		padding: 20px;
+		padding-bottom: 110px;
 	}
 
 	&__heading {
@@ -129,9 +127,6 @@
 }
 
 @media @tablet-widths {
-	.skills__container {
-		padding-top: 100px;
-	}
 
 	.skills__category {
 		width: 80%;
@@ -145,6 +140,10 @@
 }
 
 @media @desktop-widths {
+	.skills__container {
+		padding-top: 12vh;
+		padding-bottom: 25.8vh;
+	}
 
 	.skills__wrapper {
 		flex-direction: row;

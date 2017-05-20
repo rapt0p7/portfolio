@@ -1,12 +1,10 @@
 .social {
 	flex-grow: 1;
-	box-shadow: 0 2px 1px -2px #000;
-	position: relative;
-	z-index: 10;
 
 	&__container {
 		.container();
 		padding-top: 60px;
+		padding-bottom: 120px;
 	}
 
 	&__list {
@@ -46,10 +44,20 @@
 		flex-wrap: nowrap;
 	}
 
+	.social__container {
+		padding-bottom: 24.7vh;
+	}
+
 	.social__item {
 		margin-left: 8px;
 		margin-right: 8px;
 		margin-bottom: 0;
+	}
+}
+
+@media @desktop-widths {
+	.social__container {
+		padding-bottom: 28.7vh;
 	}
 }
 
