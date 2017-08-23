@@ -5,7 +5,7 @@
   "description": "Портфолио Забродина Игоря",
   "author": "Igor Zabrodin",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "0.1.x",
+    "@htmlacademy/editorconfig-cli": "~1.0.0",
     "browser-sync": "latest",
     "cz-conventional-changelog": "latest",
     "gulp": "latest",
